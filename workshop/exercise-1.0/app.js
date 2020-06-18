@@ -3,8 +3,8 @@
 console.log('exercise-1');
 
 let body = document.querySelector('body');
-let p = document.querySelector('#result');
+let main = document.querySelector('#main');
 const text = function(){
-    p.innerText = 'It works!';
+    main.innerText = 'It works!';
 }
 body.addEventListener('click', text);
