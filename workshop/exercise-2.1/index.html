@@ -2,7 +2,40 @@
 <html>
   <head>
     <title>Exercise 2.1</title>
-    <style></style>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      
+      body {
+        width: 100vw;
+        height:100vh;
+      }
+
+      span {
+        color: white;
+      }
+
+      .main {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+      }
+      
+      .main > div {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        margin: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+      }
+    </style>
   </head>
   <body>
     <div class="main" id="main"></div>
