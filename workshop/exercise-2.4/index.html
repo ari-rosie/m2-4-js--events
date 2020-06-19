@@ -2,7 +2,93 @@
 <html>
   <head>
     <title>Exercise 2.4</title>
-    <style></style>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      header {
+        background-color: silver;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      header p {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;  
+      }
+      
+
+      .not_selectable {
+        -webkit-user-select: none;  
+        -moz-user-select: none;
+        -ms-user-select: none;    
+        user-select: none;      
+      }
+      
+      .start {
+        width: 50%;
+        height: 30%;
+        background-color: plum;
+        margin: 10% auto 0 auto;
+        border-radius: 10px;
+        border: royalblue dotted 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+        cursor: pointer;
+      }
+      
+      .main {
+        position: relative;
+        height: 80%;
+      }
+
+      .btn {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        font-size: 1.5em;
+      }
+
+      .green {
+        background-color: green;
+      }
+
+      .end_div {
+        background-color: rgba(0, 102, 204, 0.5);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .end_div span {
+        font-size: 5em;
+      }
+      
+    </style>
   </head>
   <body>
     <div class="main" id="main"></div>
