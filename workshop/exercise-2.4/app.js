@@ -2,9 +2,9 @@
 let main = document.querySelector('#main');
 let body = document.querySelector('body');
 
-let counter = 3; // timer start time
+let counter = 20; // timer start time
 let clickNum = 0; //counts user's click
-const buttonNum = 2; //amount of buttons
+const buttonNum = 20; //amount of buttons
 let flagWin = false; //will tell the timer function user won
 
 //creating START button
